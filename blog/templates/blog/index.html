@@ -1,0 +1,621 @@
+{% load static %}
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" class="no-js">
+<!--<![endif]-->
+
+<head>
+	<script src="https://kit.fontawesome.com/7103afc328.js" crossorigin="anonymous"></script>
+	<!-- meta character set -->
+	<meta charset="utf-8">
+	<!-- Always force latest IE rendering engine or request Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>AquaTide</title>
+	<!-- Meta Description -->
+	<meta name="description" content="Blue One Page Creative Template">
+	<meta name="keywords"
+		content="one page, single page, onepage, responsive, parallax, creative, business, html5, css3, css3 animation">
+	<meta name="author" content="Muhammad Morshed">
+
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- CSS
+		================================================== -->
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+	<!-- Fontawesome Icon font -->
+	<link rel="stylesheet" href="{% static 'css/font-awesome.min.css'%}">
+
+	<!-- bootstrap.min -->
+	<link rel="stylesheet" href="{% static 'css/jquery.fancybox.css'%}">
+	<!-- bootstrap.min -->
+	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}">
+	<!-- bootstrap.min -->
+	<link rel="stylesheet" href="{% static 'css/owl.carousel.css'%}">
+	<!-- bootstrap.min -->
+	<link rel="stylesheet" href="{% static 'css/slit-slider.css'%}">
+	<!-- bootstrap.min -->
+	<link rel="stylesheet" href="{% static 'css/animate.css'%}">
+	<!-- Main Stylesheet -->
+	<link rel="stylesheet" href="{% static 'css/main.css'%}">
+
+	<!-- Modernizer Script for old Browsers -->
+	<script src="{% static 'js/modernizr-2.6.2.min.js'%}"></script>
+	<style>
+		.text1 {
+			color: white;
+			text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue
+		}
+	</style>
+
+</head>
+
+<body id="body">
+
+	<!-- preloader -->
+	<div id="preloader">
+		<div class="loder-box">
+			<div class="battery"></div>
+		</div>
+	</div>
+	<!-- end preloader -->
+
+	<!--
+        Fixed Navigation
+        ==================================== -->
+	<header id="navigation" class="navbar-inverse navbar-fixed-top animated-header">
+		<div class="container">
+			<div class="navbar-header">
+				<!-- responsive nav button -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<!-- /responsive nav button -->
+
+				<!-- logo -->
+				<h1 class="navbar-brand">
+					<a href="#body">AquaTide</a>
+				</h1>
+				<!-- /logo -->
+			</div>
+
+			<!-- main nav -->
+			<nav class="collapse navbar-collapse navbar-right" role="navigation">
+				<ul id="nav" class="nav navbar-nav">
+					<li><a href="#body">Home</a></li>
+					<li><a href="#service">Service</a></li>
+					<li><a href="#testimonials">WEATHER FORECAST</a></li>
+					<li><a href="#portfolio">Locations</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+			<!-- /main nav -->
+
+		</div>
+	</header>
+	<!--
+        End Fixed Navigation
+        ==================================== -->
+
+	<main class="site-content" role="main">
+
+		<!--
+        Home Slider
+        ==================================== -->
+
+		<section id="home-slider">
+			<div id="slider" class="sl-slider-wrapper">
+
+				<div class="sl-slider">
+
+					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25"
+						data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+
+						<div class="bg-img bg-img-1"></div>
+
+						<div class="slide-caption">
+							<div class="caption-content">
+								<h2 class="text1" class="animated fadeInDown">aquatide</h2>
+								<span class="animated fadeInDown">
+									<h3 class="text1">Ride the wave of adventure and relaxation</h3>
+								</span>
+								<!--<a href="form" class="btn btn-blue btn-effect">Submit a Form</a>-->
+								<a href="signin" class="btn btn-blue btn-effect">Go to Sign In</a>
+							</div>
+						</div>
+
+					</div>
+
+					{% comment %} <div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10"
+						data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
+
+						<div class="bg-img bg-img-2"></div>
+						<div class="slide-caption">
+							<div class="caption-content">
+								<h2 class="text1" class="animated fadeInDown">aquatide</h2>
+								<span class="animated fadeInDown">
+									<h3 class="text1">Ride the wave of adventure and relaxation</h3>
+								</span>
+								<a href="log_in" class="btn btn-blue btn-effect">Submit a Form</a>
+								<a href="#" class="btn btn-blue btn-effect">Go to Profile</a>
+							</div>
+						</div>
+
+					</div> {% endcomment %}
+
+				</div>
+				<!-- /sl-slider -->
+				<!--
+                <nav id="nav-arrows" class="nav-arrows">
+                    <span class="nav-arrow-prev">Previous</span>
+                    <span class="nav-arrow-next">Next</span>
+                </nav>
+				-->
+
+
+				{% comment %} <nav id="nav-arrows" class="nav-arrows hidden-xs hidden-sm visible-md visible-lg">
+
+					<a href="javascript:;" class="sl-next">
+						<i class="fa fa-angle-right fa-3x"></i>
+					</a>
+				</nav>
+
+
+				<nav id="nav-dots" class="nav-dots visible-xs visible-sm hidden-md hidden-lg">
+					<span class="nav-dot-current"></span>
+					<span></span>
+					<span></span>
+				</nav> {% endcomment %}
+
+			</div><!-- /slider-wrapper -->
+		</section>
+
+		<!--
+        End Home SliderEnd
+        ==================================== -->
+
+		<!-- about section -->
+		<section id="about">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 wow animated fadeInLeft">
+						<div class="recent-works">
+							<h3>Future work</h3>
+							<div id="works">
+								<div class="work-item">
+									<p>We are planing on hosting some tournements for volleyboll, football and beach
+										tennis there will be reward for the winning teams and after parties. <br> If you
+										are interested creat a team and sign in to have a chance at wining.</p>
+								</div>
+								<div class="work-item">
+									<p> Organize a Beach Clean-Up Event:This event aims to bring together like-minded
+										individuals, community groups, and volunteers who share a passion for marine
+										conservation. Together, we will work hand in hand to remove litter and debris
+										from our beloved beach, ensuring that it remains a safe and pristine haven for
+										both marine life and beachgoers. </p>
+								</div>
+								<div class="work-item">
+									<p>We also plan on hosting an annual festival that promises to be a celebration for
+										gathering<br>We envision this gathering as a platform for fostering new
+										connections, showcasing talent, and embracing the rich diversity that makes our
+										community unique. Join us in this joyous tradition as we embark on an
+										unforgettable journey together.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-7 col-md-offset-1 wow animated fadeInRight">
+						<div class="welcome-block">
+							<h3>Welcome To Our Site</h3>
+							<div class="message-body">
+								<img src="{% static 'img/member-1.jpg'%}" class="pull-left" alt="member">
+								<p>We are thrilled to have you here and embark on an exciting journey together. Whether
+									you're seeking information, inspiration, or a sense of community, our platform is
+									designed to cater to your needs. Our mission is to provide valuable contents and
+									services that enrich your life and bring value to your experiences. </p>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- end about section -->
+
+
+		<!-- Service section -->
+		<section id="service">
+			<div class="container">
+				<div class="row">
+					<div class="sec-title text-center">
+						<h2 class="wow animated bounceInLeft">Services</h2>
+						<p class="wow animated bounceInRight">The Key Features of our website<br>Is to Organize our
+							Clients to diffrent groups<br>To compete aganst each other in those activities</p>
+					</div>
+
+					<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn">
+						<div class="service-item">
+							<div class="service-icon">
+								<i class="fa fa-futbol-o fa-3x"></i>
+							</div>
+							<h3>Football</h3>
+							<p>teams must be made up of 5 players and a goolkeepper, the selection of players can be
+								random of created by the players </p>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.3s">
+						<div class="service-item">
+							<div class="service-icon">
+								<i class="fa-solid fa-volleyball fa-3x"></i>
+							</div>
+							<h3>volleyball</h3>
+							<p>teams must be made up of 5 players , the selection of players can be random of created by
+								the players</p>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.6s">
+						<div class="service-item">
+							<div class="service-icon">
+								<i class="fa-solid fa-table-tennis-paddle-ball fa-3x"></i>
+							</div>
+							<h3>beach tennis</h3>
+							<p>teams must be made up of 2 players, the selection of players can be random of created by
+								the players </p>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.9s">
+						<div class="service-item">
+							<div class="service-icon">
+								<i class="fa-solid fa-person-swimming fa-3x"></i>
+							</div>
+
+							<h3>Snorkeling</h3>
+							<p>teams must be made up from 2 to 5 peaple, the selection of peaple can be random of
+								created by the players </p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br>
+			<br>
+			<section id="service">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="1.2s">
+							<div class="service-item">
+								<div class="service-icon">
+									<i class="fa-solid fa-fish fa-3x"></i>
+								</div>
+								<h3>Fishing</h3>
+								<p>Groups must be made up from 2 to 5 peaple, the selection of players can be random of
+									created by the players </p>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="1.5s">
+							<div class="service-item">
+								<div class="service-icon">
+									<i class="fa-solid fa-tents fa-3x"></i>
+								</div>
+								<h3>Camping</h3>
+								<p>Groups must of 3 peaple minimum, the selection of players can be random of created by
+									the players </p>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="1.8s">
+							<div class="service-item">
+								<div class="service-icon">
+									<i class="fa-solid fa-yin-yang fa-3x"></i>
+								</div>
+								<h3>Beach Yoga</h3>
+								<p>Groups must be made up from 5 to 10 peaple, the selection of players can be random of
+									created by the players </p>
+							</div>
+						</div>
+
+
+						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="2.1s">
+							<div class="service-item">
+								<div class="service-icon">
+									<i class="fa-solid fa-dumpster fa-3x"></i>
+								</div>
+								<h3> beach clean up</h3>
+								<p>Groups must be made up from 10 to 20 peaple, the selection of peaple can be random of
+									created by the peaple </p>
+							</div>
+						</div>
+					</div>
+			</section>
+		</section>
+
+		<!-- end price section -->
+		<!-- Price section -->
+		<section id="testimonials" class="parallax">
+			<div class="overlay">
+				<div class="container">
+					<div class="sec-title text-center ">
+						<h2 class="wow animated bounceInLeft">Weather Forecast</h2>
+						<p class="wow animated bounceInLeft">Plan your adventure ahead of time to have the most fun</p>
+						<br>
+						<a class="weatherwidget-io" href="https://forecast7.com/en/37d2210d11/ras-jebel/"
+							data-label_1="RAS JEBEL" data-label_2="WEATHER" data-icons="Climacons Animated"
+							data-theme="original" data-basecolor="#4397d1" data-highcolor="#ef3333"
+							data-lowcolor="#094497">RAS JEBEL WEATHER</a>
+						<script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');</script>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- end Price section -->
+
+		<!-- portfolio section -->
+		<section id="portfolio">
+			<div class="container">
+				<div class="row">
+
+					<div class="sec-title text-center wow animated fadeInDown">
+						<h2 class="wow animated bounceInLeft">LOCATIONS TO CHOOSE</h2>
+						<p class="wow animated bounceInLeft">Those are the multiple beachs that can be visited in ras
+							jebel</p>
+					</div>
+
+
+					<ul class="project-wrapper wow animated fadeInUp">
+						<li class="portfolio-item">
+							<img src="{% static 'img/portfolio/img1.jpg'%}" class="img-responsive"
+								alt="Camping, volleyball, beach tennis, Fishing, Snorkeling, beach clean up">
+							<figcaption class="mask">
+								<h3>Hassen beach</h3>
+								<p>... </p>
+							</figcaption>
+							<ul class="external">
+								<li><a class="fancybox" title="Hassen beach" data-fancybox-group="works"
+										href="{% static 'img/portfolio/img1.jpg' %}"><i class="fa fa-search"></i></a>
+								</li>
+								<li><a
+										href="https://www.google.com/maps/place/Plage+Hassan+Belkhodja/@37.2291299,10.1448373,3036m/data=!3m1!1e3!4m6!3m5!1s0x12e2e921bccea2c7:0xaf9078ab9c24e5b1!8m2!3d37.2279001!4d10.1471494!16s%2Fg%2F11q97pvxn9?entry=ttu"><i
+											class="fa fa-link"></i></a></li>
+							</ul>
+						</li>
+
+						<li class="portfolio-item">
+							<img src="{% static 'img/portfolio/img2.jpg'%}" class="img-responsive"
+								alt="Camping, volleyball, beach tennis, Fishing, Snorkeling, beach clean up, Football, beach yoga.  ">
+							<figcaption class="mask">
+								<h3>Chatmemi beach</h3>
+								<p>... </p>
+							</figcaption>
+							<ul class="external">
+								<li><a class="fancybox" title="Chatmemi beach"
+										href="{% static 'img/portfolio/img2.jpg' %}" data-fancybox-group="works"><i
+											class="fa fa-search"></i></a></li>
+								<li><a
+										href="https://www.google.com/maps/place/Chat+Mami/@37.2396691,10.0848041,5843m/data=!3m1!1e3!4m14!1m7!3m6!1s0x12e2e87990a8406b:0xfa1c4c5ef7f3b8e8!2sChat+Mami!8m2!3d37.2385374!4d10.0948981!16s%2Fg%2F11gzjcwbd!3m5!1s0x12e2e87990a8406b:0xfa1c4c5ef7f3b8e8!8m2!3d37.2385374!4d10.0948981!16s%2Fg%2F11gzjcwbd?entry=ttu"><i
+											class="fa fa-link"></i></a></li>
+							</ul>
+						</li>
+
+						<li class="portfolio-item">
+							<img src="{% static 'img/portfolio/swisri2.jpg'%}" class="img-responsive"
+								alt="Camping, volleyball, beach tennis, Fishing, Snorkeling, beach clean up, Football, beach yoga.">
+							<figcaption class="mask">
+								<h3>Swisri beach</h3>
+								<p>...</p>
+							</figcaption>
+							<ul class="external">
+								<li><a class="fancybox" title="Swisri beach" data-fancybox-group="works"
+										href="{% static 'img/portfolio/swisri2.jpg' %}"><i class="fa fa-search"></i></a>
+								</li>
+								<li><a
+										href="https://www.google.com/maps/place/Swisry+Plage/@37.2378403,10.1160462,759m/data=!3m2!1e3!4b1!4m6!3m5!1s0x12e2e9ae8cc5c603:0xb87f9dc765fe9224!8m2!3d37.2378403!4d10.1160462!16s%2Fg%2F11smnv6lbl?entry=ttu"><i
+											class="fa fa-link"></i></a></li>
+							</ul>
+						</li>
+
+						<li class="portfolio-item">
+							<img src="{% static 'img/portfolio/kef.jpg'%}" class="img-responsive"
+								alt="Fishing, Snorkeling, beach clean up, Football, volleyball.">
+							<figcaption class="mask">
+								<h3>kef lasfer beach</h3>
+								<p>... </p>
+							</figcaption>
+							<ul class="external">
+								<li><a class="fancybox" title="kef lasfer" data-fancybox-group="works"
+										href="{% static 'img/portfolio/kef.jpg'%}"><i class="fa fa-search"></i></a></li>
+								<li><a
+										href="https://www.google.com/maps/place/Kef+lasfer/@37.2287826,10.1451697,1297m/data=!3m1!1e3!4m14!1m7!3m6!1s0x12f22f19b4c40cb5:0x58e6a2d603f9024c!2sHawar+Belkacem+Primary+School!8m2!3d36.6141822!4d6.2552764!16s%2Fg%2F11t81qvkhn!3m5!1s0x12e2e9785d61175f:0x320b5e1db1d8986!8m2!3d37.2271994!4d10.1494209!16s%2Fg%2F11rhh78td5?entry=ttu"><i
+											class="fa fa-link"></i></a></li>
+							</ul>
+						</li>
+
+						<li class="portfolio-item">
+							<img src="{% static 'img/portfolio/ainmestir.jpg'%}" class="img-responsive"
+								alt="Fishing, Snorkeling, beach clean up, ">
+							<figcaption class="mask">
+								<h3>Ain Mestir beach</h3>
+								<p>... </p>
+							</figcaption>
+							<ul class="external">
+								<li><a class="fancybox" title="Ain Mestir beach" data-fancybox-group="works"
+										href="{% static 'img/portfolio/ainmestir.jpg'%}"><i
+											class="fa fa-search"></i></a></li>
+								<li><a
+										href="https://www.google.com/maps/place/Ain+Mestir/@37.2045897,10.1907833,1574m/data=!3m1!1e3!4m6!3m5!1s0x12e2ea0cc5b8e935:0xee955f73208b1a56!8m2!3d37.2059231!4d10.1919222!16s%2Fg%2F1hm3mpfyw?entry=ttu"><i
+											class="fa fa-link"></i></a></li>
+							</ul>
+						</li>
+
+						<li class="portfolio-item">
+							<img src="{% static 'img/portfolio/rafraf1.jpg'%}" class="img-responsive"
+								alt="Camping, Fishing, Snorkeling, beach clean up,">
+							<figcaption class="mask">
+								<h3>Rafraf beach</h3>
+								<p>... </p>
+							</figcaption>
+							<ul class="external">
+								<li><a class="fancybox" title="Rafraf beach" data-fancybox-group="works"
+										href="{% static 'img/portfolio/rafraf1.jpg'%}"><i class="fa fa-search"></i></a>
+								</li>
+								<li><a
+										href="https://www.google.com/maps/place/Plage+Rafraf/@37.1913646,10.2170471,2916m/data=!3m1!1e3!4m15!1m8!3m7!1s0x12e2ea080e4aee7b:0x66fc8c472827f1d5!2sRaf+Raf!3b1!8m2!3d37.1930207!4d10.1983431!16s%2Fm%2F0b6gjj9!3m5!1s0x12e2c15cc27120af:0xf4f8e6b5527b48cf!8m2!3d37.1843116!4d10.2237449!16s%2Fg%2F11nxshn_bb?entry=ttu"><i
+											class="fa fa-link"></i></a></li>
+							</ul>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+		</section>
+		<!-- end portfolio section -->
+
+		<div class="container">
+			<div class="sec-title text-center wow animated fadeInDown">
+				<h2>AquaTide Tournement</h2>
+				<p>Be Updated</p>
+			</div>
+			<div class="sec-title text-center wow animated fadeInDown">
+				<iframe src="https://brackethq.com/b/rzinb/embed/?zoom=0" width="82%" height="680"
+					frameborder="0"></iframe>
+
+			</div>
+		</div>
+
+
+		<!-- Social section -->
+		<section id="social" class="parallax">
+			<div class="overlay">
+				<div class="container">
+					<div class="row">
+
+						<div class="sec-title text-center white wow animated fadeInDown">
+							<h2>FOLLOW US</h2>
+							<p></p>
+						</div>
+
+						<ul class="social-button">
+							<li class="wow animated zoomIn"><a href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
+							<li class="wow animated zoomIn" data-wow-delay="0.3s"><a href="#"><i
+										class="fa fa-twitter fa-2x"></i></a></li>
+							<li class="wow animated zoomIn" data-wow-delay="0.6s"><a href="#"><i
+										class="fa fa-dribbble fa-2x"></i></a></li>
+						</ul>
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- end Social section -->
+
+		<!-- Contact section -->
+		<section id="contact">
+			<div class="container">
+				<div class="row">
+
+					<div class="sec-title text-center wow animated fadeInDown">
+						<h2>Contact</h2>
+						<p>Leave a Message</p>
+
+					</div>
+					<div class="col-md-7 contact-form wow animated fadeInLeft">
+						<form action="{% url '' %}" method="POST">
+							{% csrf_token %}
+							<div class="input-field">
+								<input type="text" name="name" class="form-control" placeholder="Your Name...">
+							</div>
+							<div class="input-field">
+								<input type="email" name="email" class="form-control" placeholder="Your Email...">
+							</div>
+							<div class="input-field">
+								<input type="text" name="subjects" class="form-control" placeholder="Subject...">
+							</div>
+							<div class="input-field">
+								<textarea name="message" class="form-control" placeholder="Messages..."></textarea>
+							</div>
+							<button type="submit" id="submit" class="btn btn-blue btn-effect">Send</button>
+						</form>
+					</div>
+
+					<div class="col-md-5 wow animated fadeInRight">
+						<address class="contact-details">
+							<h3>Contact Us</h3>
+							<p><i class="fa fa-pencil"></i>Rue du Caire<span>Ras Jebel 7070</span>
+								<span>Bizerte,Tunisie</span>
+							</p>
+							<p><i class="fa fa-phone"></i>+21056994806</p>
+							<p><i class="fa fa-envelope"></i>AquaTide322@gmail.com</p>
+						</address>
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<!-- end Contact section -->
+		<iframe
+			src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d70596.4262342046!2d10.105994640601693!3d37.21737413505091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sfr!2sus!4v1691576836495!5m2!1sfr!2sus"
+			width="1530" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+			referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+	</main>
+
+	<footer id="footer">
+		<div class="container">
+			<div class="row text-center">
+				<div class="footer-content">
+					<div class="footer-social">
+						<ul>
+							<li class="wow animated zoomIn"><a href="#"><i class="fa fa-thumbs-up fa-3x"></i></a></li>
+							<li class="wow animated zoomIn" data-wow-delay="0.3s"><a href="#"><i
+										class="fa fa-twitter fa-3x"></i></a></li>
+							<li class="wow animated zoomIn" data-wow-delay="0.6s"><a href="#"><i
+										class="fa fa-skype fa-3x"></i></a></li>
+							<li class="wow animated zoomIn" data-wow-delay="0.9s"><a href="#"><i
+										class="fa fa-dribbble fa-3x"></i></a></li>
+							<li class="wow animated zoomIn" data-wow-delay="1.2s"><a
+									href="https://www.youtube.com/channel/UC4yzoGuKkCL_8FzI-B-x83A"><i
+										class="fa fa-youtube fa-3x"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Essential jQuery Plugins
+		================================================== -->
+	<!-- Main jQuery -->
+	<script src="{% static 'js/jquery-1.11.1.min.js'%}"></script>
+	<!-- Twitter Bootstrap -->
+	<script src="{% static 'js/bootstrap.min.js'%}"></script>
+	<!-- Single Page Nav -->
+	<script src="{% static 'js/jquery.singlePageNav.min.js'%}"></script>
+	<!-- jquery.fancybox.pack -->
+	<script src="{% static 'js/jquery.fancybox.pack.js'%}"></script>
+	<!-- Owl Carousel -->
+	<script src="{% static 'js/owl.carousel.min.js'%}"></script>
+	<!-- jquery easing -->
+	<script src="{% static 'js/jquery.easing.min.js'%}"></script>
+	<!-- Fullscreen slider -->
+	<script src="{% static 'js/jquery.ba-cond.min.js'%}"></script>
+	<script src="{% static 'js/jquery.slitslider.js'%}"></script>
+	<!-- Google Map API -->
+	<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	<!-- onscroll animation -->
+	<script src="{% static 'js/wow.min.js'%}"></script>
+	<!-- Custom Functions -->
+	<script src="{% static 'js/main.js'%}"></script>
+</body>
+
+</html>
